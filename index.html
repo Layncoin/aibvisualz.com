@@ -4,12 +4,165 @@
   <meta charset="UTF-8" />
   <title>AIB Visualz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --primary: #0F3D2E;
+      --accent: #7FBF9A;
+      --bg-light: #F4F7F6;
+      --text-dark: #1F2933;
+      --text-muted: #6B7280;
+      --white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    /* Brand name (top-left corner) */
+    .brand-name {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.5px;
+      z-index: 10;
+    }
+
+    /* Hero section */
+    .hero {
+      height: 85vh;
+      background:
+        linear-gradient(
+          rgba(15, 61, 46, 0.78),
+          rgba(15, 61, 46, 0.78)
+        ),
+        url("hero.jpg") center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      color: var(--white);
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      color: #d1e5dc;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 32px;
+      background: var(--accent);
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    /* Main section */
+    section {
+      background: var(--white);
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 34px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+      }
+
+      .brand-name {
+        font-size: 14px;
+        top: 15px;
+        left: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>AIB Visualz</h1>
-<p>Welcome to the official AIB Visualz website.</p>
+  <!-- Brand name -->
+  <div class="brand-name">
+    AIBvisualz Limited
+  </div>
+
+  <!-- Hero section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>AIB Visualz</h1>
+      <p>
+        Professional digital and visual solutions designed to strengthen
+        online presence, clarity, and trust.
+      </p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Welcome section -->
+  <section>
+    <h2>Welcome</h2>
+    <p>
+      AIB Visualz is a professional digital brand delivering clean,
+      secure, and visually compelling solutions for businesses and
+      individuals. We combine creativity, technology, and structure
+      to build strong digital identities.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 AIB Visualz. All rights reserved.
+  </footer>
 
 </body>
 </html>
-
